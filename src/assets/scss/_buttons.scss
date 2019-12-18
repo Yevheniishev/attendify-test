@@ -1,15 +1,73 @@
 @import "./variables.scss";
 
 .button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 15px;
+  color: $light;
+  font-weight: 700;
+  svg circle {
+    stroke: $light;
+  }
+  &:last-of-type {
+    margin-right: 0;
+  }
   &--primary {
-    color: $primary;
+    background-color: $primary;
+    &:hover {
+      background-color: $primary-hover;
+    }
+    &:active {
+      background-color: $primary-active;
+    }
   }
   &--secondary {
+    background-color: $secondary;
+    color: $primary;
+    &:hover {
+      background-color: $secondary-hover;
+    }
+    &:active {
+      background-color: $secondary-active;
+    }
+    svg circle {
+      stroke: $primary;
+    }
   }
-  &--sm {
+  &--danger {
+    background-color: $danger;
+    &:hover {
+      background-color: $danger-hover;
+    }
+    &:active {
+      background-color: $danger-active;
+    }
   }
-  &--md {
+  &--disabled {
+    background-color: $disabled;
+    color: $disabled-text;
+    pointer-events: none;
+    svg circle {
+      stroke: $disabled-text;
+    }
   }
-  &--lg {
+
+  &--small {
+    width: 100px;
+    height: 30px;
+  }
+  &--medium {
+    width: 120px;
+    height: 40px;
+  }
+  &--large {
+    width: 140px;
+    height: 50px;
   }
 }

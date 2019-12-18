@@ -1,7 +1,16 @@
 import React from "react";
 
-const Button = props => (
-  <button className="button--primary">{props.children}</button>
-);
+import Loader from "../Loader/Loader";
+
+const Button = ({ color, size, loading, children }) => {
+  const btnColor = color ? `button--${color}` : null;
+  const btnSize = size ? `button--${size}` : null;
+  return (
+    <button type="button" className={`button ${btnColor} ${btnSize}`}>
+      {loading && <Loader />}
+      {children}
+    </button>
+  );
+};
 
 export default Button;

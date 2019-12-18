@@ -1,6 +1,15 @@
 @import "../../assets/scss/variables.scss";
-.wrapper {
-  padding: 20px;
+.buttons {
+  padding: 20px 20px 0;
   border-radius: 12px;
-  border: 2px solid $default;
+  border: 2px solid rgba($disabled, 0.5);
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  &__row {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+  }
 }

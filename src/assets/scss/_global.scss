@@ -1,0 +1,13 @@
+html,
+body {
+  font-family: sans-serif;
+}
+
+button {
+  &:focus {
+    outline: none;
+  }
+}
+.main {
+  padding: 20px;
+}

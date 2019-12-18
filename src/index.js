@@ -5,4 +5,9 @@ import App from "./components/App/App";
 
 import "./assets/scss/styles.scss";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <div className="main">
+    <App />
+  </div>,
+  document.getElementById("root")
+);
