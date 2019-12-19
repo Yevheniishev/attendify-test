@@ -15,6 +15,9 @@
   svg circle {
     stroke: $light;
   }
+  svg path {
+    fill: $light;
+  }
   &:last-of-type {
     margin-right: 0;
   }
@@ -39,6 +42,9 @@
     svg circle {
       stroke: $primary;
     }
+    svg path {
+      fill: $primary;
+    }
   }
   &--danger {
     background-color: $danger;
@@ -51,23 +57,24 @@
   }
   &--disabled {
     background-color: $disabled;
-    color: $disabled-text;
+    color: $disabled-main;
     pointer-events: none;
+    user-select: none;
     svg circle {
-      stroke: $disabled-text;
+      stroke: $disabled-main;
     }
   }
 
   &--small {
     width: 100px;
-    height: 30px;
+    padding: 5px;
   }
   &--medium {
     width: 120px;
-    height: 40px;
+    padding: 10px;
   }
   &--large {
     width: 140px;
-    height: 50px;
+    padding: 15px;
   }
 }

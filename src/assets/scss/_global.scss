@@ -1,6 +1,9 @@
+@import "./variables.scss";
+
 html,
 body {
   font-family: sans-serif;
+  color: $dark;
 }
 
 button {
