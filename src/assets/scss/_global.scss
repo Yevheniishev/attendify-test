@@ -1,0 +1,16 @@
+@import "./variables.scss";
+
+html,
+body {
+  font-family: sans-serif;
+  color: $dark;
+}
+
+button {
+  &:focus {
+    outline: none;
+  }
+}
+.main {
+  padding: 20px;
+}

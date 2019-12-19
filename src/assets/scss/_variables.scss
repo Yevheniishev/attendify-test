@@ -1,2 +1,15 @@
-$primary: blue;
-$default: gray;
+$primary: #338bff;
+$primary-hover: rgba($primary, 0.8);
+$primary-active: rgba($primary, 0.6);
+$secondary: #e5f1ff;
+$secondary-hover: #d4e8ff;
+$secondary-active: rgba($secondary, 0.9);
+$danger: #f6583d;
+$danger-hover: rgba($danger, 0.8);
+$danger-active: rgba($danger, 0.6);
+$disabled: #ebebeb;
+$disabled-main: #a4a5a7;
+
+$dark: #000000;
+$light: #ffffff;
+$grass: green;
